@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Themen [
+<!ELEMENT Themen (Thema*)>
+<!ELEMENT Thema (Thema?, Beschreibung?, Frage+ )>
+<!ATTLIST Thema
+    name CDATA #REQUIRED
+    >
+<!ELEMENT Beschreibung (#PCDATA)>
+<!ELEMENT Frage ( Antwort+ )>
+<!ATTLIST Frage 
+    fragetext CDATA #REQUIRED
+    >
+<!ELEMENT Antwort (#PCDATA)>
+]>
+
+<Themen>
+    <Thema name="XML">
+        <Beschreibung>
+            XML ist eine Sprache zur Strukturierung von Daten.
+        </Beschreibung>
+        <Frage fragetext="Welche Teilbereiche von XML werden behandelt?">
+            <Antwort>Alles was im Unterricht drangekommen ist.</Antwort>
+            <Antwort>Und noch ein paar sachen mehr.</Antwort>
+        </Frage>
+        <Frage fragetext="Welche Formate verwenen z.B. XML?">
+            <Antwort>SVG</Antwort>
+            <Antwort>RSS</Antwort>
+            <Antwort>XHTML</Antwort>
+        </Frage>
+    </Thema>
+    <Thema name="Datenbanksysteme">
+        <Thema name="NoSQL Datenbank Systeme">
+            <Beschreibung>
+                NoSQL Datenbanken sind eine Art von Datenbanken, die nicht nach einem bestimmten Schema strukturiert sind.
+            </Beschreibung>
+            <Frage fragetext="Welche Datenbanken sind NoSQL?">
+                <Antwort>MongoDB</Antwort>
+                <Antwort>Neo4J</Antwort>
+                <Antwort>CouchDB</Antwort>
+            </Frage>
+        </Thema>
+        <Beschreibung>
+            Anwendung und Arbeit mit SQL basierten Datenbanksystemen.
+        </Beschreibung>
+        <Frage fragetext="Welche Datenbank wird am häufigsten verwendet?">
+            <Antwort>MySQL</Antwort>
+            <Antwort>PostgreSQL</Antwort>
+            <Antwort>Oracle</Antwort>
+        </Frage>
+    </Thema>
+</Themen>

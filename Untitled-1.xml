@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE buecher [
+<!ELEMENT buecher (buch*)>
+<!ELEMENT buch (titel, autor, isbn, preis, verlag)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT preis (#PCDATA)>
+<!ELEMENT verlag (#PCDATA)>
+]>
+<buecher>
+    <buch>
+        <titel>Das große Ding</titel>
+        <autor>Hermann Hesse</autor>
+        <isbn>978-3-8362-4331-1</isbn>
+        <preis>29.95</preis>
+        <verlag>Verlag der Stadt</verlag>
+    </buch>
+    <buch>
+        <titel>Der große Händler</titel>
+        <autor>Hermann Hesse</autor>
+        <isbn>978-3-8362-4331-1</isbn>
+        <preis>29.95</preis>
+        <verlag>Verlag der Stadt</verlag>
+    </buch>
+</buecher>
